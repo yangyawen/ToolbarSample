@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:toolbarStyle">@style/ToolBarStyle</item>
+        <!--item name="toolbarNavigationButtonStyle">@style/ToolbarNavigationButtonStyle</item-->
+        <!--item name="android:navigationBarColor">#4876FF</item-->
+    </style>
+
+    <!--style name="ToolbarNavigationButtonStyle" parent="@style/Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:width">15dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:background">@drawable/btn_back</item>
+    </style-->
+
+    <!--style name="ToolbarStyle" parent="@style/Widget.AppCompat.Toolbar">
+        <item name="android:title">呵呵</item>
+    </style-->
+
+    <!--style name="MyTitleTextAppearance" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style-->
+
+    <style name="TextAppearance.Widget.Event.Toolbar.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <!--Any text styling can be done here-->
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="ToolBarStyle.Event" parent="ToolBarStyle">
+        <item name="titleTextAppearance">@style/TextAppearance.Widget.Event.Toolbar.Title</item>
+        <item name="android:navigationMode">tabMode</item>
+    </style>
+
+    <style name="ToolBarStyle" parent="ToolBarStyle.Base">
+        <item name="titleTextAppearance">@style/TextAppearance.Widget.Event.Toolbar.Title</item>
+        <item name="android:navigationMode">tabMode</item>
+    </style>
+
+    <style name="ToolBarStyle.Base" parent="">
+        <!--item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item-->
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+
+</resources>
